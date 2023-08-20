@@ -1,0 +1,107 @@
+<!-- BEFORE AND AFTER PSUEDO SELECTORS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after psuedo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Ubuntu&family=Ubuntu+Mono:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Nunito Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Ubuntu Mono', monospace; 
+font-size: 2.5px;
+
+        }
+
+        header::before {
+            content: "";
+            background: url('https://source.unsplash.com/random/?mix fruits') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.5;
+        } 
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 40px;
+
+
+        }
+
+        li {
+            list-style: none;
+            padding: 30px;
+        }
+
+        section {
+            font-size: 20px;
+            padding: 20px;
+            display: flex;
+            margin: 50px 300px;
+            flex-direction: column;
+            align-items: center;
+
+            height: 400px;
+
+            justify-content: center; 
+        }  
+
+        section::before {
+            content: "This is content";
+        }
+
+         h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to my Coding World</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam aut, minima, accusamus
+            labore atque ex nesciunt dolorum consequuntur officiis facere qui! Quae corporis quaerat delectus
+            odit culpa illo, ducimus aperiam natus assumenda quasi voluptatibus repellendus, deleniti libero nam
+            perspiciatis aliquam magni. Impedit, odit maiores.</p>
+    </section>
+
+</body>
+
+</html>

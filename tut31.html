@@ -1,0 +1,70 @@
+       <!-- ATTRIBUTES AND NTH CHILD PSEUDO SELECTORS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selectors </title>
+</head>
+<style>
+     .container
+    {
+        margin: auto;
+        width: 233px;
+        display: block;
+    }
+    input{
+        display: block;
+    }
+    input[type='text']{
+        padding: 20px;
+        border: 2px solid red;
+    }
+    a[target]{
+        color: violet;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    a[target='_self']{
+        color: aqua;
+        text-decoration: none;
+    }
+
+
+          /* This will apply css for 3 child */
+li:nth-child(3){
+    color: cyan;
+}
+li:nth-child(odd){
+    color: antiquewhite;
+}
+li:nth-child(even){
+    color: brown;
+}
+li:nth-child(2n+0){
+    background-color: violet;
+
+}
+li:nth-child(3n+3){
+    background-color: coral;
+}  
+</style>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-control"></form>
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter your password">
+        <input type="submit" placeholder="Enter your submit">
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+                <!-- ANIMATIONS AND KEY FRAMES -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+</head>
+<STYLE>
+    .container {
+        background-color: aqua;
+    }
+
+    .box {
+        background-color: tomato;
+        width: 350px;
+        height: 350px;
+        position: relative;
+        /* animation-name: Akhil1; */
+        animation-name: Akhil2;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        /*  animation-fill-mode:backwards;
+        animation-timing-function: ease-in-out; */
+        /* animation-delay: 1s; */
+        /* animation-direction: reverse;  */
+
+
+
+        animation: Akhil2 3s ease-in-out 2s 3 forwards;
+        /* animation: animation name  animation duration  animation timing-function   animation-delay   animation-iteration-count   animation fill mode; */
+    /* } */
+
+
+
+     /* @keyframes Akhil1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 1400px;
+        }*/
+    } 
+
+    @keyframes Akhil2 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 350px;
+            left: 0px;
+        }
+
+        75% {
+            top: 350px;
+            bottom: 350px;
+        }
+
+        100% {
+            top: 0px;
+            left: 350px;
+        }
+    }
+</STYLE>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+
+</html>

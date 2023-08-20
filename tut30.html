@@ -1,0 +1,75 @@
+          <!-- MORE ON CSS SELECTORS -->
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+h1{
+    background-color: red;
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+             /* if p is contained by any lu whicj is contained by div */
+div li p{
+    background-color: green;
+    font-weight: bold;
+}
+
+         /* if p is right inside div then this css will be applied
+          */
+div > p{
+    background-color: green;
+    font-weight: bold; 
+}
+
+/* if  p is right after div i.e p is next sibling of div */
+
+ div + p{
+    color:black;
+    background-color: rgb(235, 160, 160);
+}
+    </style>
+</head>
+<body>
+    <!-- <h1>This is more on selectors</h1>
+    <div class="container">
+        <ul>
+            <li class="box"><p>this is a paragraph</p></li>
+            <li>this is another paragraph</li>
+        </ul>
+        <p>this is my paragraph</p>
+    </div>
+    <div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is yet another paragraph</p> -->
+
+
+
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <ul>
+            <li class="box"><p>this is a paragraph</p></li>
+            <li>this is another paragraph</li>
+        </ul>
+        <p>this is my paragraph</p>
+
+    </div>
+
+    <div>
+        <p>this is another paragraph</p>
+
+    </div>
+
+    <p>this is yet another paragraph</p>
+
+
+</body>
+</html>

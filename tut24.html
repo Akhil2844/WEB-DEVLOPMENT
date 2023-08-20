@@ -1,0 +1,54 @@
+                            <!-- POISITIONING IN CSS   -->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positionng</title>
+</head>
+<style>
+
+    /* Css positions: static;absolute,relative,sticky */
+.box{
+    display: inline-block;
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+}
+#box3{
+ /* position: relative;   to its normal position */
+ /* top: 34px;
+ left: 14px; */
+ 
+/* absolute positon relative to the position of its paren */
+ /* /* position: absolute; */
+ 
+
+
+ /* position: fixed;positions the element relative to the browser actions */
+ /* right: 30px; */
+ /* bottom: 30px; */
+
+ position: sticky;
+ top: 3px;
+
+}
+.container{
+    border: 2px solid red;
+    background-color: azure;
+    width: 1300px;
+    height: 2000px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    </body>
+</html>

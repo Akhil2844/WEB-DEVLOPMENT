@@ -1,0 +1,56 @@
+             <!-- CSS GRID TUTORIAL -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Grid Tutorial</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: 300px 100px 100px;
+        grid-template-columns: 300px auto 100px;
+        grid-template-columns: 300px 100px auto;
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 3rem;
+    }
+    #item{
+        background-color: red;
+        background: 2px solid red;
+        margin: 4px;
+        padding: 4px 50px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="item">Thi is item-1</div>
+        <div id="item">Thi is item-2</div>
+        <div id="item">Thi is item-3</div>
+        <div id="item">Thi is item-4</div>
+        <div id="item">Thi is item-5</div>
+        <div id="item">Thi is item-6</div>
+        <div id="item">Thi is item-7</div>
+        <div id="item">Thi is item-8</div>
+        <div id="item">Thi is item-9</div>
+        <div id="item">Thi is item-10</div>
+        <div id="item">Thi is item-11</div>
+        <div id="item">Thi is item-12</div>
+        <div id="item">Thi is item-13</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-14</div>
+        <div id="item">Thi is item-15</div>
+    </div>
+</body>
+</html>

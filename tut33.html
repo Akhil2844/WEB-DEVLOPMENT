@@ -1,0 +1,80 @@
+                  <!-- BOX SHADOW AND TEXT SHADOW -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text Shadow</title>
+</head>
+<style>
+.container{
+    display: flex;
+    
+}
+.card h2{
+    text-align: center;
+    /* text-shadow: 0.5px 2px white; */
+    /* text-shadow: 0.5px 2px 0.5px white; */
+    text-shadow: 0.5px 2px 0.5px  white;
+    
+    
+    /* Negative means same as that of the box shadow */
+}
+.card{
+   
+    
+    padding: 23px 15px;
+    margin: 23px 12px;
+    background-color: burlywood;
+    
+    /* box-shadow: offset x , offset y , blur , spread;     */
+    
+    /* box-shadow: 9px 9px green; */
+    /* box-shadow: 9px 9px 3px green; */
+    /* box-shadow: 9px 9px 9px 9px green; */
+    /* box-shadow: 9px 9px 9px 9px rgba(85, 178, 249, 0.9); */
+
+          /* ander ki taraf krne k liye */
+    /* box-shadow: inset 9px 9px 9px 9px green; */
+    
+    /* box-shadow: offset -x , offset -y , blur , spread;     */
+    /* box-shadow: -9px -9px green; */
+    /* box-shadow: -9px -9px -3px green; */
+    /* box-shadow: -9px -9px -9px -9px green; */
+    box-shadow: -9px -9px 50px  rgba(85, 178, 249, 0.9) ,-9px -9px 50px  green;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam autem consectetur ab animi magni
+                optio atque dolor. Adipisci autem impedit praesentium dolor voluptate nihil officia, ullam beatae
+                debitis optio corrupti dolorum magni ea sequi, deserunt, accusamus et nam vero?l</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is Front end course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam autem consectetur ab animi magni
+                optio atque dolor. Adipisci autem impedit praesentium dolor voluptate nihil officia, ullam beatae
+                debitis optio corrupti dolorum magni ea sequi, deserunt, accusamus et nam vero?l</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Backend course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam autem consectetur ab animi magni
+                optio atque dolor. Adipisci autem impedit praesentium dolor voluptate nihil officia, ullam beatae
+                debitis optio corrupti dolorum magni ea sequi, deserunt, accusamus et nam vero?l</p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>Card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam autem consectetur ab animi magni
+                optio atque dolor. Adipisci autem impedit praesentium dolor voluptate nihil officia, ullam beatae
+                debitis optio corrupti dolorum magni ea sequi, deserunt, accusamus et nam vero?l</p>
+        </div>
+    </div>
+</body>
+
+</html>

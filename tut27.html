@@ -1,0 +1,84 @@
+                    <!-- FLEXBOX -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+</head>
+<style>
+.container{
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+
+                /* FLEX PROPERTIEs FOR FLEX CONTAINER */
+     flex-direction: row;    /*( default flex direction) */
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+
+    flex-wrap: nowrap;
+    /* flex-wrap: wrap;
+    flex-flow:row reverse; */
+
+
+           /* justify the content in horizontal direction */
+     /* justify-content: center;
+     justify-content: space-between; 
+    justify-content: space-evenly;
+    justify-content: space-around;   */
+
+
+          /* Justify the content in vertical direction */
+    /* align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: stretch;
+} */
+}
+ .item{
+background-color: tomato;
+border: 3px solid green;
+margin: 14px;
+padding: 8px;
+height: 200px;
+width: 200px;
+}
+ #item-1{
+     order: 3; 
+    flex-grow: 2;
+    flex-shrink: 3;
+     }
+#item-2{ 
+    order: 2;
+    flex-grow: 2;
+    flex-shrink: 3;
+    flex-basis: 200px; 
+} 
+   #item-3{flex-basis: 200px; 
+align-self:flex-end; 
+align-self:flex-start;
+align-self:center;
+
+
+flex: 2 2 230px;  
+
+}  
+</style>
+<body>
+    <h3>This is Flexbox Tutorial</h3>
+    <div class="container ">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>
